@@ -4,8 +4,8 @@ introduce ="Hello world!"
 introduce =introduce.upper() #String methods
 print(introduce)
 
-def say_hi(first_name, last_name):
-    name = first_name + " " + last_name
+def say_hi(f_name, last_name):
+    name = f_name + " " + last_name
     return f"Hello {name}!"
 
 
@@ -66,3 +66,16 @@ for region in cities2.values():
 
 for key, region in cities2.items():
     print(f"{key}: {region}")
+
+students = {"calvin":[12,15,17,20], "jules":[10,15,18,19], "joel":[8,12,15,20]}
+
+
+for name, mark in students.items():
+    print(f"{name} has the following marks: {mark}")
+    print(mark[0])
+
+for key in students:
+    print(key)
+
+for marks in students.values():
+    print(marks[:3])

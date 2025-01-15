@@ -21,8 +21,6 @@ class Car:
         self.speed = speed
         return f"The car speed is {self.speed} km/h"
 
-
-
 ferarri = Car() #Instance of Car class
 print(type(ferarri)) #<class '__main__.Car'>
 ferarri.engine_started = True
